@@ -59,6 +59,8 @@ Pocket Wordle is played exactly like the original Wordle game, with one change. 
 
 3. If you guess a letter correctly, it will be shown in green. If you guess a letter incorrectly, but it exists in the word, it will be shown in yellow. If you guess a letter incorrectly, and it does not exist in the word, it will be shown in gray.
 
+4. If you guess the word correctly, you win! If you do not guess the word correctly after five guesses, you lose. Though, you have the opportunity to play again by hitting any key after the game ends.
+
 ## Tips
 
 - The word is randomly generated each time you play, so you will (hopefully) never play the same word twice.
@@ -66,3 +68,5 @@ Pocket Wordle is played exactly like the original Wordle game, with one change. 
 - The word is always a valid English word, and is always five letters long.
 
 - The keyboard is available on the screen, so you can visualize which letters you have already guessed and which letters you have not.
+
+- There are over 1,000 words available in Pocket Worlde, so you can play as long as you want!
