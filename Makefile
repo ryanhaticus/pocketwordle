@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.5/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huellen/Desktop/wordle
+CMAKE_SOURCE_DIR = /Users/huellen/desktop/wordle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huellen/Desktop/wordle
+CMAKE_BINARY_DIR = /Users/huellen/desktop/wordle
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huellen/Desktop/wordle/CMakeFiles /Users/huellen/Desktop/wordle//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huellen/desktop/wordle/CMakeFiles /Users/huellen/desktop/wordle//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huellen/Desktop/wordle/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huellen/desktop/wordle/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named wordle
+# Target rules for targets named pocketwordle
 
 # Build rule for target.
-wordle: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wordle
-.PHONY : wordle
+pocketwordle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pocketwordle
+.PHONY : pocketwordle
 
 # fast build rule for target.
-wordle/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/build
-.PHONY : wordle/fast
+pocketwordle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/build
+.PHONY : pocketwordle/fast
 
 src/board/board.o: src/board/board.cpp.o
 .PHONY : src/board/board.o
 
 # target to build an object file
 src/board/board.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/board/board.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/board/board.cpp.o
 .PHONY : src/board/board.cpp.o
 
 src/board/board.i: src/board/board.cpp.i
@@ -142,7 +142,7 @@ src/board/board.i: src/board/board.cpp.i
 
 # target to preprocess a source file
 src/board/board.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/board/board.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/board/board.cpp.i
 .PHONY : src/board/board.cpp.i
 
 src/board/board.s: src/board/board.cpp.s
@@ -150,7 +150,7 @@ src/board/board.s: src/board/board.cpp.s
 
 # target to generate assembly for a file
 src/board/board.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/board/board.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/board/board.cpp.s
 .PHONY : src/board/board.cpp.s
 
 src/cell/cell.o: src/cell/cell.cpp.o
@@ -158,7 +158,7 @@ src/cell/cell.o: src/cell/cell.cpp.o
 
 # target to build an object file
 src/cell/cell.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/cell/cell.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/cell/cell.cpp.o
 .PHONY : src/cell/cell.cpp.o
 
 src/cell/cell.i: src/cell/cell.cpp.i
@@ -166,7 +166,7 @@ src/cell/cell.i: src/cell/cell.cpp.i
 
 # target to preprocess a source file
 src/cell/cell.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/cell/cell.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/cell/cell.cpp.i
 .PHONY : src/cell/cell.cpp.i
 
 src/cell/cell.s: src/cell/cell.cpp.s
@@ -174,7 +174,7 @@ src/cell/cell.s: src/cell/cell.cpp.s
 
 # target to generate assembly for a file
 src/cell/cell.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/cell/cell.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/cell/cell.cpp.s
 .PHONY : src/cell/cell.cpp.s
 
 src/cursor/cursor.o: src/cursor/cursor.cpp.o
@@ -182,7 +182,7 @@ src/cursor/cursor.o: src/cursor/cursor.cpp.o
 
 # target to build an object file
 src/cursor/cursor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/cursor/cursor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/cursor/cursor.cpp.o
 .PHONY : src/cursor/cursor.cpp.o
 
 src/cursor/cursor.i: src/cursor/cursor.cpp.i
@@ -190,7 +190,7 @@ src/cursor/cursor.i: src/cursor/cursor.cpp.i
 
 # target to preprocess a source file
 src/cursor/cursor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/cursor/cursor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/cursor/cursor.cpp.i
 .PHONY : src/cursor/cursor.cpp.i
 
 src/cursor/cursor.s: src/cursor/cursor.cpp.s
@@ -198,7 +198,7 @@ src/cursor/cursor.s: src/cursor/cursor.cpp.s
 
 # target to generate assembly for a file
 src/cursor/cursor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/cursor/cursor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/cursor/cursor.cpp.s
 .PHONY : src/cursor/cursor.cpp.s
 
 src/game/game.o: src/game/game.cpp.o
@@ -206,7 +206,7 @@ src/game/game.o: src/game/game.cpp.o
 
 # target to build an object file
 src/game/game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/game/game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/game/game.cpp.o
 .PHONY : src/game/game.cpp.o
 
 src/game/game.i: src/game/game.cpp.i
@@ -214,7 +214,7 @@ src/game/game.i: src/game/game.cpp.i
 
 # target to preprocess a source file
 src/game/game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/game/game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/game/game.cpp.i
 .PHONY : src/game/game.cpp.i
 
 src/game/game.s: src/game/game.cpp.s
@@ -222,7 +222,7 @@ src/game/game.s: src/game/game.cpp.s
 
 # target to generate assembly for a file
 src/game/game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/game/game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/game/game.cpp.s
 .PHONY : src/game/game.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -230,7 +230,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -238,7 +238,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -246,7 +246,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/render/render.o: src/render/render.cpp.o
@@ -254,7 +254,7 @@ src/render/render.o: src/render/render.cpp.o
 
 # target to build an object file
 src/render/render.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/render/render.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/render/render.cpp.o
 .PHONY : src/render/render.cpp.o
 
 src/render/render.i: src/render/render.cpp.i
@@ -262,7 +262,7 @@ src/render/render.i: src/render/render.cpp.i
 
 # target to preprocess a source file
 src/render/render.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/render/render.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/render/render.cpp.i
 .PHONY : src/render/render.cpp.i
 
 src/render/render.s: src/render/render.cpp.s
@@ -270,7 +270,7 @@ src/render/render.s: src/render/render.cpp.s
 
 # target to generate assembly for a file
 src/render/render.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/render/render.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/render/render.cpp.s
 .PHONY : src/render/render.cpp.s
 
 src/row/row.o: src/row/row.cpp.o
@@ -278,7 +278,7 @@ src/row/row.o: src/row/row.cpp.o
 
 # target to build an object file
 src/row/row.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/row/row.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/row/row.cpp.o
 .PHONY : src/row/row.cpp.o
 
 src/row/row.i: src/row/row.cpp.i
@@ -286,7 +286,7 @@ src/row/row.i: src/row/row.cpp.i
 
 # target to preprocess a source file
 src/row/row.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/row/row.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/row/row.cpp.i
 .PHONY : src/row/row.cpp.i
 
 src/row/row.s: src/row/row.cpp.s
@@ -294,7 +294,7 @@ src/row/row.s: src/row/row.cpp.s
 
 # target to generate assembly for a file
 src/row/row.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/row/row.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/row/row.cpp.s
 .PHONY : src/row/row.cpp.s
 
 src/word/word.o: src/word/word.cpp.o
@@ -302,7 +302,7 @@ src/word/word.o: src/word/word.cpp.o
 
 # target to build an object file
 src/word/word.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/word/word.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/word/word.cpp.o
 .PHONY : src/word/word.cpp.o
 
 src/word/word.i: src/word/word.cpp.i
@@ -310,7 +310,7 @@ src/word/word.i: src/word/word.cpp.i
 
 # target to preprocess a source file
 src/word/word.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/word/word.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/word/word.cpp.i
 .PHONY : src/word/word.cpp.i
 
 src/word/word.s: src/word/word.cpp.s
@@ -318,7 +318,7 @@ src/word/word.s: src/word/word.cpp.s
 
 # target to generate assembly for a file
 src/word/word.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/word/word.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pocketwordle.dir/build.make CMakeFiles/pocketwordle.dir/src/word/word.cpp.s
 .PHONY : src/word/word.cpp.s
 
 # Help Target
@@ -329,7 +329,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... wordle"
+	@echo "... pocketwordle"
 	@echo "... src/board/board.o"
 	@echo "... src/board/board.i"
 	@echo "... src/board/board.s"
