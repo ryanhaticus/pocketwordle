@@ -6,6 +6,17 @@
 
 typedef enum { BACKGROUND, GRAY, LIGHT_GRAY, WHITE, YELLOW, GREEN } WordleColor;
 
+typedef enum {
+  CP_BACKGROUND,
+  CP_GRAY,
+  CP_LIGHT_GRAY,
+  CP_WHITE,
+  CP_YELLOW,
+  CP_GREEN,
+  CP_YELLOW_TEXT,
+  CP_GREEN_TEXT
+} WordleColorPair;
+
 class Render {
  private:
   static Render *instance;
@@ -13,13 +24,15 @@ class Render {
   Render();
   ~Render();
 
-  void startColor(WordleColor color);
-  void stopColor(WordleColor color);
+  void startColor(WordleColorPair color);
+  void stopColor(WordleColorPair color);
   short scaleRGB(int rgb);
   void drawBackground();
   void drawTitle();
   void drawBoard();
   void drawResult();
+  void drawKeyboard();
+  void drawLeftBar();
 
  public:
   static Render *getInstance() {

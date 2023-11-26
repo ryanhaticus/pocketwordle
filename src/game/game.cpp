@@ -14,6 +14,11 @@ std::string Game::getWord() { return this->word; }
 
 void Game::setWord(std::string word) {
   this->board->clear();
+
+  for (int i = 0; i < word.length(); i++) {
+    word[i] = toupper(word[i]);
+  }
+
   this->word = word;
 }
 
@@ -70,9 +75,9 @@ void Game::move(char input) {
     return;
   }
 
-  char letter = tolower(input);
+  char letter = toupper(input);
 
-  if (letter < 'a' || letter > 'z') {
+  if (letter < 'A' || letter > 'Z') {
     return;
   }
 

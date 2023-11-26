@@ -21,7 +21,7 @@ class Game {
 
   bool running = true;
   GameState state = GameState::PLAYING;
-  std::string word = "words";
+  std::string word = "WORDS";
   Board *board = new Board();
   Cursor *cursor = new Cursor();
 

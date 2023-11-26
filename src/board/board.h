@@ -21,6 +21,7 @@ class Board {
   Row* getRow(int i);
   void clear();
   void setLetter(int row, int col, char letter);
+  CellState findLetterState(char letter);
 };
 
 #endif
