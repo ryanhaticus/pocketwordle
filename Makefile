@@ -297,6 +297,30 @@ src/row/row.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/row/row.cpp.s
 .PHONY : src/row/row.cpp.s
 
+src/word/word.o: src/word/word.cpp.o
+.PHONY : src/word/word.o
+
+# target to build an object file
+src/word/word.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/word/word.cpp.o
+.PHONY : src/word/word.cpp.o
+
+src/word/word.i: src/word/word.cpp.i
+.PHONY : src/word/word.i
+
+# target to preprocess a source file
+src/word/word.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/word/word.cpp.i
+.PHONY : src/word/word.cpp.i
+
+src/word/word.s: src/word/word.cpp.s
+.PHONY : src/word/word.s
+
+# target to generate assembly for a file
+src/word/word.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wordle.dir/build.make CMakeFiles/wordle.dir/src/word/word.cpp.s
+.PHONY : src/word/word.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -327,6 +351,9 @@ help:
 	@echo "... src/row/row.o"
 	@echo "... src/row/row.i"
 	@echo "... src/row/row.s"
+	@echo "... src/word/word.o"
+	@echo "... src/word/word.i"
+	@echo "... src/word/word.s"
 .PHONY : help
 
 

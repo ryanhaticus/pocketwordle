@@ -3,6 +3,7 @@
 #include "../board/board.h"
 #include "../cell/cell.h"
 #include "../cursor/cursor.h"
+#include "../word/word.h"
 
 Game *Game::instance = nullptr;
 
@@ -37,6 +38,7 @@ void Game::move(char input) {
     board->clear();
     cursor->reset();
     this->state = GameState::PLAYING;
+    this->setWord(chooseRandomWord());
 
     return;
   }

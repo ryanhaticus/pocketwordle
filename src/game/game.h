@@ -8,6 +8,7 @@
 #include "../board/board.h"
 #include "../cell/cell.h"
 #include "../cursor/cursor.h"
+#include "../word/word.h"
 
 typedef enum {
   PLAYING,
@@ -21,11 +22,11 @@ class Game {
 
   bool running = true;
   GameState state = GameState::PLAYING;
-  std::string word = "WORDS";
+  std::string word;
   Board *board = new Board();
   Cursor *cursor = new Cursor();
 
-  Game(){};
+  Game() { this->setWord(chooseRandomWord()); };
   ~Game(){};
 
  public:

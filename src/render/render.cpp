@@ -157,7 +157,7 @@ void Render::drawResult() {
   stopColor(WordleColorPair::CP_GRAY);
 }
 
-std::array<std::vector<std::string>, 3> qwertyKeyboard = {
+const std::array<std::vector<std::string>, 3> qwertyKeyboard = {
     {{"Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"},
      {"A", "S", "D", "F", "G", "H", "J", "K", "L"},
      {"ENTER", "Z", "X", "C", "V", "B", "N", "M", "BACK"}}};
