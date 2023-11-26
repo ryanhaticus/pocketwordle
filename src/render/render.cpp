@@ -3,6 +3,7 @@
 #include <ncurses.h>
 
 #include <array>
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -18,6 +19,8 @@ Render::Render() {
   noecho();
   curs_set(0);
   keypad(stdscr, TRUE);
+
+  std::cout << "\033]0;Pocket Worldle - By Ryan Huellen\007" << std::endl;
 
   start_color();
 
