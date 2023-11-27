@@ -1,5 +1,7 @@
 #include "game.h"
 
+#include <ncurses.h>
+
 #include "../board/board.h"
 #include "../cell/cell.h"
 #include "../cursor/cursor.h"
@@ -65,7 +67,7 @@ void Game::move(char input) {
     return;
   }
 
-  if (input == 127) {
+  if (input == KEY_BACKSPACE || input == 127 || input == '\b') {
     if (cell->getLetter() == EMPTY_CELL) {
       cursor->regressCol();
       cell = board->getRow(cursor->getRow())->getCell(cursor->getCol());
