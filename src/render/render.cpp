@@ -169,7 +169,7 @@ void Render::drawKeyboard() {
   static Game *game = Game::getInstance();
 
   for (int r = 0; r < 3; r++) {
-    for (int c = 0; c < qwertyKeyboard[r].size(); c++) {
+    for (size_t c = 0; c < qwertyKeyboard[r].size(); c++) {
       std::string key = qwertyKeyboard[r][c];
 
       CellState keyState = CellState::DOESNT_EXIST;
@@ -194,7 +194,7 @@ void Render::drawKeyboard() {
           (r == 0 ? 2 : 0) + (r == 1 ? 4 : 0) + (r == 2 && c > 0 ? 4 : 0);
 
       for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < key.length() + 2; j++) {
+        for (size_t j = 0; j < key.length() + 2; j++) {
           mvaddch(i + 9 + r * 4, j + c * 4 + 37 + padding, EMPTY_CELL);
         }
       }
