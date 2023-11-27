@@ -12,6 +12,13 @@ This repository was developed as part of COM S 327 (Advanced Programming Techniq
 
 If you're playing Pocket Wordle on a remote host (such as through ssh), you may experience some issues with the keyboard and display. For the best experience, please build and run Pocket Wordle on your local machine.
 
+If you need to play Pocket Wordle on a remote host, you can use `tmux` to solve most rendering issues. To do so, run the following commands after building the project:
+
+```bash
+tmux
+./pocketwordle
+```
+
 ## Building the Project
 
 In order to build Pocket Wordle, you will need to have the following installed:

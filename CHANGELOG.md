@@ -35,3 +35,5 @@
 11/26/2023, 1:46 AM: Finished writing documentation for the `README.md` file.
 
 11/26/2023, 7:33 PM: Moved off of CMake to a simple `Makefile` and updated build/run documentation.
+
+11/26/2023, 8:29 PM: Added a mention of `tmux` to solve rendering issue on remote hosts in `README.md`.
