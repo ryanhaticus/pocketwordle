@@ -33,3 +33,5 @@
 11/26/2023, 1:42 AM: Downgraded CMake to the version running on Pyrite.
 
 11/26/2023, 1:46 AM: Finished writing documentation for the `README.md` file.
+
+11/26/2023, 7:33 PM: Moved off of CMake to a simple `Makefile` and updated build/run documentation.

@@ -18,32 +18,18 @@ For the best experience, please build and run Pocket Wordle on your local machin
 
 In order to build Pocket Wordle, you will need to have the following installed:
 
-- [CMake](https://cmake.org/)
 - [g++](https://gcc.gnu.org/)
 - [ncurses](https://invisible-island.net/ncurses/)
 
 Once you have these installed, you can build Pocket Wordle by running the following commands:
 
 ```bash
-./build.sh
-```
-
-or, alternatively,
-
-```bash
-cmake .
 make
 ```
 
 ## Running the Project
 
 Once you have built Pocket Wordle, you can run it by running the following command:
-
-```bash
-./run.sh
-```
-
-or, alternatively,
 
 ```bash
 ./pocketwordle
