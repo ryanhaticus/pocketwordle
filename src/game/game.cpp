@@ -16,7 +16,7 @@ std::string Game::getWord() { return this->word; }
 void Game::setWord(std::string word) {
   this->board->clear();
 
-  for (int i = 0; i < word.length(); i++) {
+  for (size_t i = 0; i < word.length(); i++) {
     word[i] = toupper(word[i]);
   }
 
