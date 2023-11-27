@@ -67,7 +67,7 @@ void Game::move(char input) {
     return;
   }
 
-  if (input == KEY_BACKSPACE || input == ('?' & 0x1f)) {
+  if (input == KEY_BACKSPACE) {
     if (cell->getLetter() == EMPTY_CELL) {
       cursor->regressCol();
       cell = board->getRow(cursor->getRow())->getCell(cursor->getCol());

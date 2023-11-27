@@ -10,9 +10,7 @@ This repository was developed as part of COM S 327 (Advanced Programming Techniq
 
 ## Disclaimer
 
-If you're playing Pocket Wordle through ssh, you may experience some issues with the keyboard and display. You can fix these issues by [allocating the terminal beforehand](https://unix.stackexchange.com/questions/304699/ncurses-over-ssh-will-they-be-displayed), but this is not guarenteed to work depending on your terminal emulator and ssh client.
-
-For the best experience, please build and run Pocket Wordle on your local machine.
+If you're playing Pocket Wordle on a remote host (such as through ssh), you may experience some issues with the keyboard and display. For the best experience, please build and run Pocket Wordle on your local machine.
 
 ## Building the Project
 
